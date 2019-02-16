@@ -1,6 +1,6 @@
 # JsonMigrator
 
-[Nuget](https://www.nuget.org/packages/StijnOostdam.JsonMigrator/)
+[Nuget](https://www.nuget.org/packages/JsonMigrator/)
 
 Small library to implement migration methods for classes serialized and stored as JSON
 
