@@ -10,33 +10,40 @@ Firstly, it is required to add a string property called JsonVersion to any class
 
 Say you have this class:
 
+```cs
     public class DummyClass  
     {  
         public string JsonVersion { get; set; }      
         public string StringValue { get; set; }      
         public int IntegerValue { get; set; }      
     }
-    
+```    
+
 Then you update your program and your class looks like this:
 
+```cs
     public class DummyClass  
     {  
         public string JsonVersion { get; set; }      
         public string StringValue2 { get; set; }      
         public int IntegerValue2 { get; set; }      
     }
+```
 
 After another update, your class looks like this:
 
+```cs
     public class DummyClass  
     {  
         public string JsonVersion { get; set; }      
         public string StringValue3 { get; set; }      
         public int IntegerValue3 { get; set; }      
     }
+```
     
 For users running the first or second version, their JSON will not deserialize correctly after updating to the latest version. To fix this, add migration methods:
 
+```cs
     public class DummyClass
     {
         public string JsonVersion { get; set; }
@@ -65,13 +72,16 @@ For users running the first or second version, their JSON will not deserialize c
             return jToken;
         }
     }
+```
     
 Note that the <code>Rename</code> method is an extension method offered by JsonMigrator and not part of the standard Json.Net library. All migration methods must have the same signature: A migration attribute, private static, JToken return type and 1 JToken as parameter.
 
 The migration can then be called using the following code:
 
+```cs
     var jtoken = JToken.Parse("{\"JsonVersion\":\"1\",\"StringValue\":\"String1\",\"IntegerValue\":1}");
     jtoken = JsonMigrator.Migrate<DummyClass>(jtoken);
     var dummy = jtoken.ToObject<DummyClass>();
+```
     
 The dummy object will now have migrated to version 3.
