@@ -66,7 +66,7 @@ For users running the first or second version, their JSON will not deserialize c
         }
     }
     
-Note that the <code>Rename</code> method is an extension method offered by JsonMigrator and not part of the standard Json.Net library.
+Note that the <code>Rename</code> method is an extension method offered by JsonMigrator and not part of the standard Json.Net library. All migration methods must have the same signature: A migration attribute, private static, JToken return type and 1 JToken as parameter.
 
 The migration can then be called using the following code:
 
