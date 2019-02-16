@@ -14,7 +14,7 @@ namespace JsonMigrator.Tests
             var jtoken = JToken.Parse("{\"JsonVersion\":\"1\",\"StringValue\":\"String1\",\"IntegerValue\":1}");
             jtoken = JsonMigrator.Migrate<DummyClass>(jtoken);
 
-            var dummy = JsonConvert.DeserializeObject<DummyClass>(jtoken.ToString());
+            var dummy = jtoken.ToObject<DummyClass>();
 
             Assert.AreEqual(dummy.StringValue3, "String1");
             Assert.AreEqual(dummy.IntegerValue3, 1);
