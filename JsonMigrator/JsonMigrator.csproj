@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>StijnOostdam.JsonMigrator</PackageId>
+    <PackageId>JsonMigrator</PackageId>
     <Authors>Stijn Oostdam</Authors>
     <Company>Stijn Oostdam</Company>
     <Description>Small library to implement migration methods for classes serialized and stored as JSON</Description>
     <PackageProjectUrl>https://github.com/StijnOostdam/JsonMigrator</PackageProjectUrl>
     <PackageTags>JSON, Migration</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
