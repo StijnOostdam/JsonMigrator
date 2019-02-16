@@ -11,12 +11,12 @@ Firstly, it is required to add a string property called JsonVersion to any class
 Say you have this class:
 
 ```cs
-    public class DummyClass  
-    {  
-        public string JsonVersion { get; set; }      
-        public string StringValue { get; set; }      
-        public int IntegerValue { get; set; }      
-    }
+public class DummyClass  
+{  
+    public string JsonVersion { get; set; }      
+    public string StringValue { get; set; }      
+    public int IntegerValue { get; set; }      
+}
 ```    
 
 Then you update your program and your class looks like this:
