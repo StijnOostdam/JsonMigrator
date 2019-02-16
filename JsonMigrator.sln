@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonMigrator", "JsonMigrator\JsonMigrator.csproj", "{DDE5D01A-9BD5-487F-81BA-561EAB00A7CA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonMigrator.Tests", "JsonMigrator.Tests\JsonMigrator.Tests.csproj", "{E268C257-E5EF-41A6-B075-E765A9B14672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonMigrator", "JsonMigrator\JsonMigrator.csproj", "{75562DF6-9EF2-4379-BFF9-2844ADBD4897}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DDE5D01A-9BD5-487F-81BA-561EAB00A7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDE5D01A-9BD5-487F-81BA-561EAB00A7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDE5D01A-9BD5-487F-81BA-561EAB00A7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDE5D01A-9BD5-487F-81BA-561EAB00A7CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E268C257-E5EF-41A6-B075-E765A9B14672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E268C257-E5EF-41A6-B075-E765A9B14672}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E268C257-E5EF-41A6-B075-E765A9B14672}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E268C257-E5EF-41A6-B075-E765A9B14672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75562DF6-9EF2-4379-BFF9-2844ADBD4897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75562DF6-9EF2-4379-BFF9-2844ADBD4897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75562DF6-9EF2-4379-BFF9-2844ADBD4897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75562DF6-9EF2-4379-BFF9-2844ADBD4897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
